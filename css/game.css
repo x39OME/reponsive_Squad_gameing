@@ -29,6 +29,10 @@ body {
   text-transform: uppercase;
   padding: 2px 8px;
 }
+.img-game{
+  max-width: 100%;
+  width: 100%;
+}
 /* Start Navbar */
 .navbar {
   background-color: var(--dark-color);
@@ -286,10 +290,6 @@ body {
 }
 .live-stream.style-two .live-meta .blue{
   background: #007bff;
-}
-.img-stream{
-  max-width: 100%;
-  width: 100%;
 }
 /* End streaming */
 /* Start Latest video */
