@@ -14,7 +14,7 @@ body {
   background-color: transparent;
   border: 3px solid var(--red-color);
   color: #e3dfdf;
-  padding: 16px 26px;
+  padding: 16px 29px;
   transition: .5s;
   font-size: 12px;
   font-weight: bold;
@@ -28,6 +28,23 @@ body {
   border-left: 3px solid var(--red-color);
   text-transform: uppercase;
   padding: 2px 8px;
+}
+.point{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.point span{
+  width: 8px;
+  height: 8px;
+  background: #6B1414;
+  border-radius: 50%;
+}
+.point span.active{
+  background: var(--red-color);
+  width: 11px;
+  height: 11px;
 }
 .img-game{
   max-width: 100%;
@@ -396,23 +413,6 @@ body {
 }
 .episodes{
   background: #1F1F1F;
-}
-.point{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-}
-.point span{
-  width: 8px;
-  height: 8px;
-  background: #6B1414;
-  border-radius: 50%;
-}
-.point span.active{
-  background: var(--red-color);
-  width: 11px;
-  height: 11px;
 }
 .text-ep{
   position: relative;
