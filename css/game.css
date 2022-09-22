@@ -14,7 +14,7 @@ body {
   background-color: transparent;
   border: 3px solid var(--red-color);
   color: #e3dfdf;
-  padding: 16px 34px;
+  padding: 16px 26px;
   transition: .5s;
   font-size: 12px;
   font-weight: bold;
