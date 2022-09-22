@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Squad Game</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/game.css" />
+    <link rel="icon" href="imgs/icon.PNG">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="logo navbar-brand" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclude" viewBox="0 0 16 16">
+            <path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm12 2H5a1 1 0 0 0-1 1v7h7a1 1 0 0 0 1-1V4z"/>
+          </svg>
+          <span>Squad Game</span>
+        </a>
+        <button 
+        class="navbar-toggler"type="button"data-bs-toggle="collapse"data-bs-target="#main"aria-controls="main"aria-expanded="false"aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">Community</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="search ps-3 pe-3 d-none d-lg-block">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <a class="btn rounded-pill main-btn" href="#">Login</a>
+        </div>
+      </div>
+    </nav>
+    <div class="landing d-flex justify-content-left align-items-center">
+      <div class="landing-txt text-left text-light">
+        <p class="border-left fs-4">best of 2022</p>
+        <h1 class="title-txt fw-bold fst-italic">gaming <br />world class <span class="special">news</span></h1>
+        <p class="fs-6 text-white mb-5">
+          <span class="pg-18 bg-light text-dark fw-bold p-1 border border-2">PG 18</span>
+          <span class="pg-18 bg-transparent text-white fw-bold p-1 border border-2">HD</span>
+          <span class="pg-18 ms-2 text-white-50">Romance, Drama</span>
+          <span class="pg-20 ms-2 text-white-50">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+              <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+            </svg>
+            <span class="ms-1">2022</span>
+          </span>
+          <span class="pg-20 ms-2 text-white-50">
+            <svg class xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+            </svg>
+            <span class="ms-1">131 min</span>
+          </span>
+        </p>
+        <a class="btn rounded-pill main-btn" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+          </svg>
+          Watch Now</a>
+      </div>
+    </div>
+    <!-- Start Trending -->
+    <div class="trending text-start pt-5 pb-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mt-5 mb-5 position-relative">
+          <h2 class="border-left text-light fw-bold fs-4">Trending</h2>
+          <a class="btn rounded-pill main-btn" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+              <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>
+            Watch Now</a>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="box">
+              <div class="image position-relative">
+                <img src="imgs/trending01.jpg" class=" img-fluid" alt="trending">
+                <a href="https://www.youtube.com/" target="_blank">
+                  <img src="imgs/v_play.png" alt="play" class="play position-absolute">
+                </a>
+                <span class="time-hd position-absolute loca pg-18 bg-light text-dark fw-bold border border-2">01 :45</span>
+                <span class="hd position-absolute loca pg-18 bg-transparent text-white fw-bold border border-2">HD</span>
+              </div>
+              <div class="content d-flex justify-content-between align-items-center text-white mt-3">
+                <p class="text-content">Mark Sniper sells House</p>
+                <p class="live text-uppercase">Lives</p>
+              </div>
+              <div class="view d-flex justify-content-start gap-20 align-items-center text-uppercase">
+                <span>35k views</span>
+                <span class="ms-4">January 25, 2022</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="box">
+              <div class="image position-relative">
+                <img src="imgs/trending02.jpg" class=" img-fluid" alt="trending">
+                <a href="https://www.youtube.com/" target="_blank">
+                  <img src="imgs/v_play.png" alt="play" class="play position-absolute">
+                </a>
+                <span class="time-hd position-absolute loca pg-18 bg-light text-dark fw-bold border border-2">01 :45</span>
+                <span class="hd position-absolute loca pg-18 bg-transparent text-white fw-bold border border-2">HD</span>
+              </div>
+              <div class="content d-flex justify-content-between align-items-center text-white mt-3">
+                <p class="text-content">Mark Sniper sells House</p>
+                <p class="live text-uppercase">Lives</p>
+              </div>
+              <div class="view d-flex justify-content-start gap-20 align-items-center text-uppercase">
+                <span>47k views</span>
+                <span class="ms-4">January 21, 2022</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="box">
+              <div class="image position-relative">
+                <img src="imgs/trending03.jpg" class=" img-fluid" alt="trending">
+                <a href="https://www.youtube.com/" target="_blank">
+                  <img src="imgs/v_play.png" alt="play" class="play position-absolute">
+                </a>
+                <span class="time-hd position-absolute loca pg-18 bg-light text-dark fw-bold border border-2">01 :45</span>
+                <span class="hd position-absolute loca pg-18 bg-transparent text-white fw-bold border border-2">HD</span>
+              </div>
+              <div class="content d-flex justify-content-between align-items-center text-white mt-3">
+                <p class="text-content">Mark Sniper sells House</p>
+                <p class="live text-uppercase">Lives</p>
+              </div>
+              <div class="view d-flex justify-content-start gap-20 align-items-center text-uppercase">
+                <span>31k views</span>
+                <span class="ms-4">January 25, 2022</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="box">
+              <div class="image position-relative">
+                <img src="imgs/trending04.jpg" class=" img-fluid" alt="trending">
+                <a href="https://www.youtube.com/" target="_blank">
+                  <img src="imgs/v_play.png" alt="play" class="play position-absolute">
+                </a>
+                <span class="time-hd position-absolute loca pg-18 bg-light text-dark fw-bold border border-2">01 :45</span>
+                <span class="hd position-absolute loca pg-18 bg-transparent text-white fw-bold border border-2">HD</span>
+              </div>
+              <div class="content d-flex justify-content-between align-items-center text-white mt-3">
+                <p class="text-content">Mark Sniper sells House</p>
+                <p class="live text-uppercase">Lives</p>
+              </div>
+              <div class="view d-flex justify-content-start gap-20 align-items-center text-uppercase">
+                <span>26k views</span>
+                <span class="ms-4">January 23, 2022</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="box">
+              <div class="image position-relative">
+                <img src="imgs/trending05.jpg" class=" img-fluid" alt="trending">
+                <a href="https://www.youtube.com/" target="_blank">
+                  <img src="imgs/v_play.png" alt="play" class="play position-absolute">
+                </a>
+                <span class="time-hd position-absolute loca pg-18 bg-light text-dark fw-bold border border-2">01 :45</span>
+                <span class="hd position-absolute loca pg-18 bg-transparent text-white fw-bold border border-2">HD</span>
+              </div>
+              <div class="content d-flex justify-content-between align-items-center text-white mt-3">
+                <p class="text-content">Mark Sniper sells House</p>
+                <p class="live text-uppercase">Lives</p>
+              </div>
+              <div class="view d-flex justify-content-start gap-20 align-items-center text-uppercase">
+                <span>115k views</span>
+                <span class="ms-4">January 15, 2022</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="box">
+              <div class="image position-relative">
+                <img src="imgs/trending06.jpg" class=" img-fluid" alt="trending">
+                <a href="https://www.youtube.com/" target="_blank">
+                  <img src="imgs/v_play.png" alt="play" class="play position-absolute">
+                </a>
+                <span class="time-hd position-absolute loca pg-18 bg-light text-dark fw-bold border border-2">01 :45</span>
+                <span class="hd position-absolute loca pg-18 bg-transparent text-white fw-bold border border-2">HD</span>
+              </div>
+              <div class="content d-flex justify-content-between align-items-center text-white mt-3">
+                <p class="text-content">Mark Sniper sells House</p>
+                <p class="live text-uppercase">Lives</p>
+              </div>
+              <div class="view d-flex justify-content-start gap-20 align-items-center text-uppercase">
+                <span>61k views</span>
+                <span class="ms-4">January 21, 2022</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Trending -->
+    <!--Start Streaming -->
+    <div class="streaming pt-5 pb-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mt-5 mb-5 position-relative">
+          <h2 class="border-left text-light fw-bold fs-4">live streaming</h2>
+        </div>
+        <div class="row">
+          <div class="col-xl-8 col-lg-7">
+            <div class="live-stream mb-4">
+              <div class="thumb">
+                <img src="imgs/stream01.jpg" class="img-fluid img-stream">
+                <a href="#" class="popup-video">
+                  <img src="imgs/w_play.png" alt="white-play">
+                </a>
+              </div>
+              <div class="content-stream">
+                <div class="live-meta">
+                  <ul class="list-unstyled">
+                    <li class="cat">
+                      <a href="#" class="text-uppercase text-decoration-none">Cricket</a>
+                    </li>
+                    <li>3 months ago</li>
+                  </ul>
+                </div>
+                <h4 class="title-stream">
+                  <a href="#" class="text-decoration-none text-light">
+                    Ditched The Naked Chicken Chalupa Here’s To Make
+                  </a>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-5">
+            <div class="row">
+              <div class="col-lg-12 col-md-6">
+                <div class="live-stream style-two mb-4">
+                  <div class="thumb">
+                    <img src="imgs/stream02.jpg" class="img-fluid img-stream">
+                  </div>
+                  <div class="content-stream">
+                    <a href="#" class="popup-video">
+                      <img src="imgs/w_play.png" alt="white-play">
+                    </a>
+                    <div class="live-meta">
+                      <ul class="list-unstyled">
+                        <li class="cat">
+                          <a href="#" class="text-uppercase text-decoration-none">Sports</a>
+                        </li>
+                        <li>3 months ago</li>
+                      </ul>
+                    </div>
+                    <h4 class="title-stream">
+                      <a href="#" class="text-decoration-none text-light">
+                        House last week that move would Inject
+                      </a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-6">
+                <div class="live-stream style-two mb-4">
+                  <div class="thumb">
+                    <img src="imgs/stream03.jpg" class="img-fluid img-stream">
+                  </div>
+                  <div class="content-stream">
+                    <a href="#" class="popup-video">
+                      <img src="imgs/w_play.png" alt="white-play">
+                    </a>
+                    <div class="live-meta">
+                      <ul class="list-unstyled">
+                        <li class="cat">
+                          <a href="#" class="text-uppercase text-decoration-none blue">Sports</a>
+                        </li>
+                        <li>3 months ago</li>
+                      </ul>
+                    </div>
+                    <h4 class="title-stream">
+                      <a href="#" class="text-decoration-none text-light">
+                        Twas the night before in the NFL
+                      </a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Streaming -->
+    <!--Start Latest video -->
+    <div class="latest-video pt-5 pb-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mt-5 mb-5 position-relative">
+          <h2 class="border-left text-light fw-bold fs-4">Latest video</h2>
+          <a class="btn rounded-pill main-btn" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+              <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>
+            Watch Now</a>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="box-last">
+              <div class="image-last position-relative">
+                <img src="imgs/trending01.jpg" class=" img-fluid" alt="trending">
+                <a href="https://www.youtube.com/" target="_blank">
+                  <img src="imgs/v_play.png" alt="play" class="play-last position-absolute">
+                </a>
+                <span class="time-hd-last position-absolute loca pg-18 bg-light text-dark fw-bold border border-2">01 :45</span>
+                <span class="hd-last position-absolute loca pg-18 bg-transparent text-white fw-bold border border-2">HD</span>
+              </div>
+              <div class="content-last d-flex justify-content-between align-items-center text-white mt-3">
+                <p class="text-content-last">Mark Sniper sells House</p>
+                <p class="live-last text-uppercase">Lives</p>
+              </div>
+              <div class="view-last d-flex justify-content-start gap-20 align-items-center text-uppercase">
+                <span>22k views</span>
+                <span class="ms-4">March 25, 2022</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 ">
+            <div class="box-last">
+              <div class="image-last position-relative">
+                <img src="imgs/trending02.jpg" class=" img-fluid" alt="trending">
+                <a href="https://www.youtube.com/" target="_blank">
+                  <img src="imgs/v_play.png" alt="play" class="play-last position-absolute">
+                </a>
+                <span class="time-hd-last position-absolute loca pg-18 bg-light text-dark fw-bold border border-2">01 :45</span>
+                <span class="hd-last position-absolute loca pg-18 bg-transparent text-white fw-bold border border-2">HD</span>
+              </div>
+              <div class="content-last d-flex justify-content-between align-items-center text-white mt-3">
+                <p class="text-content-last">Mark Sniper sells House</p>
+                <p class="live-last text-uppercase">Lives</p>
+              </div>
+              <div class="view-last d-flex justify-content-start gap-20 align-items-center text-uppercase">
+                <span>22k views</span>
+                <span class="ms-4">March 25, 2022</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 ">
+            <div class="box-last">
+              <div class="image-last position-relative">
+                <img src="imgs/trending04.jpg" class=" img-fluid" alt="trending">
+                <a href="https://www.youtube.com/" target="_blank">
+                  <img src="imgs/v_play.png" alt="play" class="play-last position-absolute">
+                </a>
+                <span class="time-hd-last position-absolute loca pg-18 bg-light text-dark fw-bold border border-2">01 :45</span>
+                <span class="hd-last position-absolute loca pg-18 bg-transparent text-white fw-bold border border-2">HD</span>
+              </div>
+              <div class="content-last d-flex justify-content-between align-items-center text-white mt-3">
+                <p class="text-content-last">Mark Sniper sells House</p>
+                <p class="live-last text-uppercase">Lives</p>
+              </div>
+              <div class="view-last d-flex justify-content-start gap-20 align-items-center text-uppercase">
+                <span>22k views</span>
+                <span class="ms-4">March 25, 2022</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Latest video -->
+    <!-- Start Brand -->
+    <div class="brand pt-5 pb-5 text-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+            <img class="img-fluid" src="imgs/brand_logo01.png" alt="" />
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+            <img class="img-fluid" src="imgs/brand_logo02.png" alt="" />
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+            <img class="img-fluid" src="imgs/brand_logo03.png" alt="" />
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+            <img class="img-fluid" src="imgs/brand_logo04.png" alt="" />
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+            <img class="img-fluid" src="imgs/brand_logo05.png" alt="" />
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+            <img class="img-fluid" src="imgs/brand_logo06.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Brand -->
+    <!-- Start New Team -->
+    <div class="team text-center pt-5 pb-5 text-light">
+      <h2>Create Your Team Now</h2>
+      <p class="text-white-50">Leave your description and we Will Help You .Don't worry, you can cancel anytime</p>
+      <div class="d-flex justify-content-center mt-5 mb-5">
+        <a class="btn rounded-pill main-btn text-uppercase" href="#">Create New team</a>
+      </div>
+    </div>
+    <!-- End New Team -->
+    <!-- Start Episodes Video -->
+    <div class="episodes-video pt-5 pb-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mt-5 mb-5 position-relative">
+          <h2 class="border-left text-light fw-bold fs-4">Episodes video</h2>
+          <a class="point" href="#">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <div class="row episodes p-5 ">
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="imgs/episode01.jpg" class="card-img-top" alt="Video" />
+              <div class="card-body">
+                <span class="text-white-50">Jan 26, 2022</span>
+                <h5 class="card-title text-light">Some Awesome Video Title Here</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="imgs/episode02.jpg" class="card-img-top" alt="Video" />
+              <div class="card-body">
+                <span class="text-white-50">Jan 26, 2022</span>
+                <h5 class="card-title text-light">Some Awesome Video Title Here</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="imgs/episode03.jpg" class="card-img-top" alt="Video" />
+              <div class="card-body">
+                <span class="text-white-50">Jan 26, 2022</span>
+                <h5 class="card-title text-light">Some Awesome Video Title Here</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mt-5 mb-5">
+          <a class="btn rounded-pill main-btn" href="#">More Videos</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Episode Video -->
+    <!--Start Latest Article -->
+    <div class="latest-video pt-5 pb-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mt-5 mb-5 position-relative">
+          <h2 class="border-left text-light fw-bold fs-4">Latest article</h2>
+          <a class="btn rounded-pill main-btn" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+              <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>
+            Watch Now</a>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="box-latest">
+              <div class="position-relative">
+                <img src="imgs/article01.jpg" class=" img-fluid" alt="trending">
+              </div>
+              <div class="date mt-3 mb-3 text-light">
+                <svg class="text-white-50" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                </svg>
+                Mar 10, 2022
+                <span class="comment text-light">
+                  <svg class="text-white-50" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                    <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                  </svg>
+                  <span>1 Comment </span>
+                </span>
+              </div>
+              <h5 class="text-light mb-3 fw-bold">
+                Animated Short Film: "Thatching Eggs" by Max Marlow
+              </h5>
+              <a href="#" class="read-more text-decoration-none">
+                Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="box-latest">
+              <div class="position-relative">
+                <img src="imgs/article02.jpg" class=" img-fluid" alt="trending">
+              </div>
+              <div class="date mt-3 mb-3 text-light">
+                <svg class="text-white-50" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                </svg>
+                Mar 10, 2022
+                <span class="comment text-light">
+                  <svg class="text-white-50" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                    <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                  </svg>
+                  <span>9 Comment </span>
+                </span>
+              </div>
+              <h5 class="text-light mb-3 fw-bold">
+                Swagbucks Games, you have direct access
+              </h5>
+              <a href="#" class="read-more text-decoration-none">
+                Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="box-latest">
+              <div class="position-relative">
+                <img src="imgs/article03.jpg" class=" img-fluid" alt="trending">
+              </div>
+              <div class="date mt-3 mb-3 text-light">
+                <svg class="text-white-50" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                </svg>
+                Mar 6, 2022
+                <span class="comment text-light">
+                  <svg class="text-white-50" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                    <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                  </svg>
+                  <span>26 Comment </span>
+                </span>
+              </div>
+              <h5 class="text-light mb-3 fw-bold">
+                Popular card game is a modern versionby Max
+              </h5>
+              <a href="#" class="read-more text-decoration-none">
+                Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Latest Article -->
+    <!-- Start Subscribe -->
+    <div class="subscribe pt-5 pb-5 text-center text-md-start">
+      <div class="subcribe-bg container p-5">
+        <form class="row align-items-center">
+          <div class="col-md-6 col-lg-3 mb-2 mt-2">
+            <div class="fw-bold fs-5 text-light text-uppercase">
+              Our <span class="newletter">Newsletter</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-7 mb-2 mt-2 letter">
+            <input class="w-100 text-light bg-transparent" type="text" placeholder="Enter Email Address" />
+          </div>
+          <div class="col-md-6 col-lg-2 mb-2 mt-2">
+            <button class="button-sub text-white">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Subscribe -->
+    <!-- Start Footer -->
+    <div class="footer pt-5 pb-5 text-white-50 text-center text-md-start">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="info mb-5">
+              <img src="imgs/logo.png" alt="" class="mb-4" />
+              <p class="mb-5">
+                Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed,
+                convallis at tellus.
+              </p>
+              <div class="copyright">
+                Created By 
+                <span>x39OME</span>
+                <div>&copy; 2022 - <span>Squad Game Inc</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="links">
+              <h5 class="text-light">Links</h5>
+              <ul class="list-unstyled lh-lg">
+                <li>Home</li>
+                <li>Our Services</li>
+                <li>Portfolio</li>
+                <li>Testimonials</li>
+                <li>Support</li>
+                <li>Terms and Condition</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="links">
+              <h5 class="text-light">About Us</h5>
+              <ul class="list-unstyled lh-lg">
+                <li>Sign In</li>
+                <li>Register</li>
+                <li>About Us</li>
+                <li>Blog</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="contact">
+              <h5 class="text-light">Contact Us</h5>
+              <p class="lh-lg mt-3 mb-5">Get in touch with us via mail phone.We are waiting for your call or message</p>
+              <a class="btn rounded-pill main-btn w-100" href="#">Gamesquad@hotmail.inc</a>
+              <ul class="d-flex mt-5 list-unstyled gap-3">
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i class="fa-brands fa-instagram fa-lg rounded-circle p-2"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i class="fa-brands fa-twitter fa-lg rounded-circle p-2"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i class="fa-brands fa-linkedin fa-lg rounded-circle p-2"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i class="fa-brands fa-snapchat fa-lg rounded-circle p-2"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i class="fa-brands fa-youtube fa-lg rounded-circle p-2"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Footer -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>
